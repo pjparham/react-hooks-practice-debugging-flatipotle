@@ -5,7 +5,7 @@ import fajitaVeg from "../images/fillings/fajita-veggies.png";
 import pintoBeans from "../images/fillings/pinto-beans.png";
 import whiteRice from "../images/fillings/white-rice.png";
 
-function FillingForm(props) {
+function FillingForm({ handleOnChange, fillings }) {
   return (
     <>
       <h1>
@@ -19,8 +19,8 @@ function FillingForm(props) {
               type="checkbox"
               value="White Rice"
               name="fillings"
-              checked={props.fillings.includes("White Rice")}
-              onChange={props.handleChange}
+              checked={fillings.includes("White Rice")}
+              onChange={handleOnChange}
             />
             <img
               src={whiteRice}
@@ -39,8 +39,8 @@ function FillingForm(props) {
               type="checkbox"
               value="Brown Rice"
               name="fillings"
-              checked={props.fillings.includes("Brown Rice")}
-              onChange={props.handleChange}
+              checked={fillings.includes("Brown Rice")}
+              onChange={handleOnChange}
             />
             <img
               src={brownRice}
@@ -59,8 +59,8 @@ function FillingForm(props) {
               type="checkbox"
               value="Black Beans"
               name="fillings"
-              checked={props.fillings.includes("Black Beans")}
-              onChange={props.handleChange}
+              checked={fillings.includes("Black Beans")}
+              onChange={handleOnChange}
             />
             <img
               src={blackBeans}
@@ -79,8 +79,8 @@ function FillingForm(props) {
               type="checkbox"
               value="Pinto Beans"
               name="fillings"
-              checked={props.fillings.includes("Pinto Beans")}
-              onChange={props.handleChange}
+              checked={fillings.includes("Pinto Beans")}
+              onChange={handleOnChange}
             />
             <img
               src={pintoBeans}
@@ -99,8 +99,8 @@ function FillingForm(props) {
               type="checkbox"
               value="Fajita Veggies"
               name="fillings"
-              checked={props.fillings.includes("Fajita Veggies")}
-              onChange={props.handleChange}
+              checked={fillings.includes("Fajita Veggies")}
+              onChange={handleOnChange}
             />
             <img
               src={fajitaVeg}
